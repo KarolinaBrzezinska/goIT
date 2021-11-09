@@ -597,13 +597,25 @@
 						</ul>
 					</div>
 					<div class="footer-newsletter">
-					<form name="signup_form" autocomplete="on" novalidate class="footer-newsletter">
-						<label class="footer-label-description">
-							Zapisz się do newslettera
-							<input type="email" name="email"  />
-						</label>
-						<button type="submit" class="footer-button-text">Zapisz się</button>
-					</form>
+						<form
+							name="signup_form"
+							autocomplete="on"
+							novalidate
+							class="footer-form"
+						>
+							<label class="footer-label-text">
+								Zapisz się do newslettera
+								<input type="email" name="email" class="footer-label-input" />
+							</label>
+							<button type="submit" class="footer-button-text">
+								Zapisz się
+								<svg class="footer-icon-sent">
+									<use
+										href="../images/icons.svg#icon-footer-newsletter-sent"
+									></use>
+								</svg>
+							</button>
+						</form>
 					</div>
 				</div>
 			</section>
@@ -615,6 +627,6 @@
 				<button type="button" class="close-btn" data-modal-close>X</button>
 			</div>
 		</div>
-		<script src="./js/modal.js"></script>
+		<script src="/js/modal.js"></script>
 	</body>
 </html>
